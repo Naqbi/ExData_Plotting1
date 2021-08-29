@@ -7,5 +7,5 @@ datetime <- paste(subset_data$Date,  subset_data$Time, sep = ' ')
 datetime <- strptime(datetime, "%d/%m/%Y %H:%M:%S")
 png("~/ExData_Plotting1/figure/plot2.png", width = 480, height = 480)
 
-[plot(datetime, global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
+plot(datetime, global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 dev.off()
